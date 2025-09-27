@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zayyaf Leaning </title>
+    <meta name="description" content="Website development course offerings covering HTML, CSS, JavaScript, Python, PHP, Java, C#, Ruby, Go, Rust, SQL and more." />
+<link rel="stylesheet" href="./assest/css/style.css">
+    
+</head>
+<body>
+      <!-- Header -->
+
+    <header role="banner">
+    <div class="container nav" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Web Dev Academy home">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Web Dev <span style="color:var(--brand)">Academy</span></span>
+      </a>
+
+      <button class="btn text hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+
+      <nav id="primary-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn secondary" href="#register">Enroll Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Slider -->
+  <main id="top" class="hero">
+    <div class="container">
+      <div class="slider" aria-roledescription="carousel" aria-label="Highlights">
+        
+        <div class="slides">
+          <!-- slide 1 -->
+          <section class="slide" aria-roledescription="slide" aria-label="Become a Full-Stack Developer">
+            <div class="content">
+              <span class="kicker pill">Cohort starts monthly</span>
+              <h1 class="headline">Become a Full-Stack Developer</h1>
+              <p class="sub">Master HTML, CSS, JavaScript, frameworks, APIs, databases, and deployment with hands-on projects and live mentorship.</p>
+              <div class="actions">
+                <a class="btn" href="#courses">Explore Courses</a>
+                <a class="btn secondary" href="#register" aria-label="Go to registration">Register Now</a>
+              </div>
+            </div>
+          </section>
+          <!-- slide 2 -->
+          <section class="slide" aria-roledescription="slide" aria-label="Languages & Frameworks">
+            <div class="content">
+              <span class="kicker pill">Frontend • Backend • DevOps</span>
+              <h2 class="headline">All Major Languages & Frameworks</h2>
+              <p class="sub">From <b>HTML/CSS</b> to <b>JS/TS, React, Vue, Angular</b>, and <b>Node, PHP, Python, Java, C#, Go, Rust</b>—build real apps that ship.</p>
+              <div class="actions">
+                <a class="btn" href="#courses">See Syllabus</a>
+                <a class="btn text" href="#about">Why Us →</a>
+              </div>
+            </div>
+          </section>
+          <!-- slide 3-->
+          <section class="slide" aria-roledescription="slide" aria-label="Career Support">
+            <div class="content">
+              <span class="kicker pill">Portfolio • Interview Prep</span>
+              <h2 class="headline">Career-Ready in Weeks</h2>
+              <p class="sub">Build a portfolio, get 1:1 code reviews, mock interviews, and job-search support to land your first dev role or level up.</p>
+              <div class="actions">
+                <a class="btn" href="#register">Join the Next Cohort</a>
+                <a class="btn text" href="#testimonials">Student Stories</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="dots" role="tablist" aria-label="Slide controls">
+          <button class="dot" role="tab" aria-label="Slide 1"></button>
+          <button class="dot" role="tab" aria-label="Slide 2"></button>
+          <button class="dot" role="tab" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+        <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About Us</h2>
+          <p>Project-based learning • Mentorship • Community</p>
+        </div>
+
+        <div class="about">
+          <div class="card">
+            <h3>Learn by Building</h3>
+            <p>We believe the fastest way to become a developer is to <b>ship real projects</b>. Our curriculum blends fundamentals with production-grade practices, covering frontend, backend, databases, testing, CI/CD, cloud, and soft skills.</p>
+            <div class="ticks">
+              <div class="tick"><b>✔</b> Instructor-led live sessions</div>
+              <div class="tick"><b>✔</b> Career guidance & mock interviews</div>
+              <div class="tick"><b>✔</b> Code reviews & pair programming</div>
+              <div class="tick"><b>✔</b> Certificates & portfolio projects</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Stack Coverage</h3>
+            <p>HTML • CSS • JavaScript • TypeScript • React • Next.js • Vue • Angular • SASS • Tailwind • Node.js • Express • PHP • Laravel • Python • Django • Flask • Ruby on Rails • Java • Spring • C# • .NET • Go • Rust • SQL • NoSQL • Docker • Git & GitHub • CI/CD • Cloud basics</p>
+            <div class="divider"></div>
+            <span class="badge-inline pill" aria-label="Avg cohort size">👩‍💻 Avg cohort: 25</span>
+            <span class="badge-inline pill" aria-label="Duration">⏱ 8–24 weeks</span>
+            <span class="badge-inline pill" aria-label="Format">🌐 Online / Hybrid</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses">
+      <div class="container">
+        <div class="section-head">
+          <h2>Course List</h2>
+          <p>Filter by track or language</p>
+        </div>
+
+        <div class="filters" role="toolbar" aria-label="Course filters">
+          <button class="btn filter" data-filter="all">All</button>
+          <button class="btn filter" data-filter="frontend">Frontend</button>
+          <button class="btn filter" data-filter="backend">Backend</button>
+          <button class="btn filter" data-filter="fullstack">Full-Stack</button>
+          <button class="btn filter" data-filter="devops">DevOps</button>
+          <button class="btn filter" data-filter="mobile">Mobile</button>
+          <button class="btn filter" data-filter="database">Database</button>
+          <button class="btn filter" data-filter="python">Python</button>
+          <button class="btn filter" data-filter="java">Java</button>
+          <button class="btn filter" data-filter="csharp">C#</button>
+          <button class="btn filter" data-filter="php">PHP</button>
+          <button class="btn filter" data-filter="js">JavaScript</button>
+          <button class="btn filter" data-filter="go">Go</button>
+          <button class="btn filter" data-filter="rust">Rust</button> 
+        </div>
+
+        <div class="grid">
+          <!-- Fullstack Bootcamp -->
+          <article class="card large course fullstack js node database" data-tags="fullstack,js,node,database">
+            <div class="thumb" role="img" aria-label="Full-Stack JavaScript Bootcamp background">
+              <span class="badge">Bootcamp</span>
+            </div>
+            <div class="body">
+              <h3 class="title">Full-Stack JavaScript (React + Node)</h3>
+              <div class="meta">
+                <span>📅 16 weeks</span>
+                <span>🧑‍🏫 Live + Projects</span>
+                <span class="price">USD 1299</span>
+              </div>
+              <p>HTML, CSS, JS/TS, React, Next.js, Node, Express, REST, Auth, PostgreSQL, Prisma, Docker, CI/CD.</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">React</span><span class="tag">Node</span><span class="tag">SQL</span>
+              </div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="Full-Stack JavaScript">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Frontend -->
+          <article class="card course frontend js" data-tags="frontend,js">
+            <div class="thumb" role="img" aria-label="Frontend Developer Program background">
+              <span class="badge">Frontend</span>
+            </div>
+            <div class="body">
+              <h3 class="title">Frontend Developer (HTML/CSS/JS + React)</h3>
+              <div class="meta">
+                <span>📅 12 weeks</span><span>🧪 Projects</span><span class="price">USD 899</span>
+              </div>
+              <p>Responsive UI, accessibility, ES6+, React fundamentals, state, routing, API integration, testing.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">React</span></div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="Frontend Developer">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Python -->
+          <article class="card course backend python" data-tags="backend,python">
+            <div class="thumb" role="img" aria-label="Python & Django background">
+              <span class="badge">Python</span>
+            </div>
+            <div class="body">
+              <h3 class="title">Python & Django (API + Web)</h3>
+              <div class="meta"><span>📅 10 weeks</span><span>🧪 Projects</span><span class="price">USD 799</span></div>
+              <p>Python, Django, DRF, auth, ORM, Celery, Redis, Docker, testing, deployment.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">API</span></div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="Python & Django">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PHP -->
+          <article class="card course backend php" data-tags="backend,php">
+            <div class="thumb" role="img" aria-label="PHP & Laravel background">
+              <span class="badge">PHP</span>
+            </div>
+            <div class="body">
+              <h3 class="title">PHP & Laravel (Modern Backend)</h3>
+              <div class="meta"><span>📅 10 weeks</span><span>🧪 Projects</span><span class="price">USD 749</span></div>
+              <p>Laravel 11, Eloquent, queues, events, API resources, Sanctum/Passport, testing, Horizon.</p>
+              <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="PHP & Laravel">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Java -->
+          <article class="card course backend java" data-tags="backend,java">
+            <div class="thumb" role="img" aria-label="Java & Spring Boot background">
+              <span class="badge">Java</span>
+            </div>
+            <div class="body">
+              <h3 class="title">Java & Spring Boot (Microservices)</h3>
+              <div class="meta"><span>📅 12 weeks</span><span>🧪 Projects</span><span class="price">USD 999</span></div>
+              <p>Spring Boot, REST, JPA, security, Docker, Kafka basics, testing, cloud deploy.</p>
+              <div class="tags"><span class="tag">Spring</span><span class="tag">PostgreSQL</span></div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="Java & Spring Boot">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- C# -->
+          <article class="card course backend csharp" data-tags="backend,csharp">
+            <div class="thumb" role="img" aria-label=".NET & C# background">
+              <span class="badge">C#</span>
+            </div>
+            <div class="body">
+              <h3 class="title">C# & .NET (Web API + MVC)</h3>
+              <div class="meta"><span>📅 10 weeks</span><span>🧪 Projects</span><span class="price">USD 899</span></div>
+              <p>.NET 8 Web API, EF Core, identity, minimal APIs, testing, deployment.</p>
+              <div class="tags"><span class="tag">.NET</span><span class="tag">EF Core</span></div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="C# & .NET">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Go -->
+          <article class="card course backend go" data-tags="backend,go">
+            <div class="thumb" role="img" aria-label="Go background"><span class="badge">Go</span></div>
+            <div class="body">
+              <h3 class="title">Go Backend (High-Performance APIs)</h3>
+              <div class="meta"><span>📅 8 weeks</span><span>🧪 Projects</span><span class="price">USD 799</span></div>
+              <p>Goroutines, channels, REST, gRPC intro, PostgreSQL, testing, Docker.</p>
+              <div class="tags"><span class="tag">Golang</span><span class="tag">gRPC</span></div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="Go Backend">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Rust -->
+          <article class="card course backend rust" data-tags="backend,rust">
+            <div class="thumb" role="img" aria-label="Rust background"><span class="badge">Rust</span></div>
+            <div class="body">
+              <h3 class="title">Rust Web Services (Axum/Actix)</h3>
+              <div class="meta"><span>📅 8 weeks</span><span>🧪 Projects</span><span class="price">USD 899</span></div>
+              <p>Ownership, async Rust, Axum/Actix, SQLx, testing, deployment.</p>
+              <div class="tags"><span class="tag">Rust</span><span class="tag">Axum</span></div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="Rust Web Services">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Databases -->
+          <article class="card course database" data-tags="database">
+            <div class="thumb" role="img" aria-label="Databases background"><span class="badge">DB</span></div>
+            <div class="body">
+              <h3 class="title">Databases (SQL + NoSQL)</h3>
+              <div class="meta"><span>📅 6 weeks</span><span>🧪 Labs</span><span class="price">USD 499</span></div>
+              <p>Relational modeling, PostgreSQL, MySQL, MongoDB, indexing, transactions, query tuning.</p>
+              <div class="tags"><span class="tag">SQL</span><span class="tag">NoSQL</span></div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="Databases">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mobile -->
+          <article class="card course mobile js" data-tags="mobile,js">
+            <div class="thumb" role="img" aria-label="Mobile Apps background"><span class="badge">Mobile</span></div>
+            <div class="body">
+              <h3 class="title">Mobile Apps (React Native)</h3>
+              <div class="meta"><span>📅 8 weeks</span><span>🧪 Projects</span><span class="price">USD 699</span></div>
+              <p>RN fundamentals, navigation, APIs, native modules basics, store & publish.</p>
+              <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span></div>
+              <div class="actions">
+                <a class="btn" href="#register" data-course="Mobile Apps">Enroll</a>
+                <button class="btn text syllabus">View Syllabus</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="register" aria-labelledby="reg-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="reg-title">Register for a Course</h2>
+          <p>Secure your seat—limited cohort size</p>
+        </div>
+
+        <div class="register">
+          <form id="regForm" novalidate>
+            <div class="row">
+              <div>
+                <label for="name">Full Name</label>
+                <input id="name" name="name" autocomplete="name" required placeholder="Your name" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" inputmode="tel" placeholder="+92..." />
+              </div>
+              <div>
+                <label for="course">Select Course</label>
+                <select id="course" name="course" required>
+                  <option value="">Choose a course…</option>
+                  <option>Full-Stack JavaScript</option>
+                  <option>Frontend Developer</option>
+                  <option>Python & Django</option>
+                  <option>PHP & Laravel</option>
+                  <option>Java & Spring Boot</option>
+                  <option>C# & .NET</option>
+                  <option>Go Backend</option>
+                  <option>Rust Web Services</option>
+                  <option>Databases</option>
+                  <option>Mobile Apps</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="message">Goals / Experience (optional)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals, background, and timeline…"></textarea>
+            </div>
+            <div class="form-actions">
+              <span class="note">By clicking Enroll, you agree to our <a href="#">Terms</a> & <a href="#">Privacy</a>.</span>
+              <button class="btn" type="submit">Enroll</button>
+            </div>
+            <p id="regStatus" class="help" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="card">
+            <h3>What happens next?</h3>
+            <p>After submitting the form, you’ll receive an email with cohort dates, payment options, and a short skills checklist to place you in the right track.</p>
+            <ul>
+              <li>🎯 Skills survey for personalized roadmap</li>
+              <li>🧑‍🏫 Onboarding orientation (optional)</li>
+              <li>💳 Installments available</li>
+            </ul>
+            <div class="divider"></div>
+            <h4>Need help choosing?</h4>
+            <p class="subtle">Book a free counseling call and we’ll map your path—beginner to job-ready.</p>
+            <a class="btn secondary" href="#courses">Compare Courses</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" aria-labelledby="testi-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="testi-title">Testimonials</h2>
+          <p>What our learners say</p>
+        </div>
+
+        <div class="testis">
+          <figure class="quote">
+            <blockquote>“The Full-Stack JS bootcamp gave me a portfolio and confidence. I landed a junior dev role two weeks after graduating.”</blockquote>
+            <figcaption class="who"><span class="avatar" aria-hidden="true"></span> <b>Ayesha</b> • Junior Developer</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>“I switched from QA to backend with Python & Django. The projects and code reviews were top-tier.”</blockquote>
+            <figcaption class="who"><span class="avatar" aria-hidden="true"></span> <b>Hassan</b> • Backend Engineer</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>“Clear roadmap, supportive mentors, and realistic assignments. Highly recommend the Java Spring track.”</blockquote>
+            <figcaption class="who"><span class="avatar" aria-hidden="true"></span> <b>Mehwish</b> • Java Developer</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="blog" aria-labelledby="blog-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="blog-title">From the Blog</h2>
+          <p>Tutorials • Career tips • Roadmaps</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="thumb" role="img" aria-label="How to pick your first programming language background"></div>
+            <div class="body">
+              <h3 class="title">How to Pick Your First Programming Language</h3>
+              <p class="subtle">Confused between Python, JS, or Java? Use these criteria to decide based on goals, job market, and learning style.</p>
+              <a class="read-more" href="#">Read article →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb" role="img" aria-label="Frontend roadmap background"></div>
+            <div class="body">
+              <h3 class="title">Frontend Roadmap 2025</h3>
+              <p class="subtle">A crisp path from HTML/CSS basics to frameworks, state management, testing, and performance.</p>
+              <a class="read-more" href="#">Read article →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb" role="img" aria-label="Build and deploy background"></div>
+            <div class="body">
+              <h3 class="title">Build & Deploy Your First API</h3>
+              <p class="subtle">Step-by-step to a production-ready API with auth, database, and CI/CD.</p>
+              <a class="read-more" href="#">Read article →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container foot">
+      <div>
+        <div class="brand">
+          <span class="logo" aria-hidden="true"></span>
+          <span><b>Web Dev</b> Academy</span>
+        </div>
+        <p class="subtle">Learn modern web development by building real projects with mentorship and community support.</p>
+      </div>
+      <div>
+        <h4>Programs</h4>
+        <a href="#courses">Full-Stack</a>
+        <a href="#courses">Frontend</a>
+        <a href="#courses">Backend</a>
+        <a href="#courses">Mobile</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h4>Subscribe</h4>
+        <form id="subForm">
+          <label class="sr-only" for="subEmail">Email</label>
+          <input id="subEmail" type="email" placeholder="you@example.com" required />
+          <div style="margin-top:.5rem; display:flex; gap:.5rem">
+            <button class="btn" type="submit">Join</button>
+            <span class="help" id="subStatus" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container" style="margin-top:18px; display:flex; justify-content:space-between; gap:.6rem; flex-wrap:wrap; color:var(--muted); font-size:.9rem">
+      <span>© <span id="year"></span> Web Dev Academy. All rights reserved.</span>
+      <span><a href="#">Privacy</a> • <a href="#">Terms</a></span>
+    </div>
+  </footer>
+
+  <script>
+    // Header: mobile menu
+    const burger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    if (burger) {
+      burger.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+
+    // Slider
+    const slidesEl = document.querySelector('.slides');
+    const dots = Array.from(document.querySelectorAll('.dot'));
+    let idx = 0, timer = null, hovering = false;
+
+    function go(i){
+      idx = (i + dots.length) % dots.length;
+      slidesEl.style.transform = `translateX(-${idx*100}%)`;
+      dots.forEach((d, k) => d.classList.toggle('active', k === idx));
+    }
+    function play(){
+      stop();
+      timer = setInterval(()=>{ if(!hovering){ go(idx+1); } }, 5000);
+    }
+    function stop(){ if(timer) clearInterval(timer); }
+    dots.forEach((d, i)=> d.addEventListener('click', ()=>{ go(i); play(); }));
+
+    const slider = document.querySelector('.slider');
+    slider.addEventListener('mouseenter', ()=> hovering=true);
+    slider.addEventListener('mouseleave', ()=> hovering=false);
+
+    go(0); play();
+
+    // Filter Courses
+    const filterBtns = document.querySelectorAll('.filter');
+    const courses = document.querySelectorAll('.course');
+    filterBtns.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const key = btn.dataset.filter;
+        filterBtns.forEach(b=> b.classList.remove('active'));
+        btn.classList.add('active');
+        courses.forEach(c=>{
+          if(key === 'all') { c.classList.remove('hidden'); return; }
+          const tags = (c.dataset.tags || '').toLowerCase();
+          c.classList.toggle('hidden', !tags.includes(key));
+        });
+      });
+    });
+
+    // Preselect course when clicking Enroll on a card
+    document.querySelectorAll('[data-course]').forEach(el=>{
+      el.addEventListener('click', (e)=>{
+        const v = el.getAttribute('data-course');
+        const sel = document.getElementById('course');
+        if(sel){
+          [...sel.options].forEach(o=>{ if(o.textContent === v) sel.value = v; });
+        }
+      });
+    });
+
+    // Registration form (demo validation only)
+    const regForm = document.getElementById('regForm');
+    const regStatus = document.getElementById('regStatus');
+    regForm?.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const data = new FormData(regForm);
+      const required = ['name','email','course'];
+      for(const k of required){
+        if(!data.get(k)){ regStatus.textContent = 'Please fill required fields.'; regStatus.style.color = 'var(--warn)'; return; }
+      }
+      // Demo: pretend to submit
+      regStatus.textContent = 'Thanks! Your registration was received. Check your email for next steps.';
+      regStatus.style.color = 'var(--accent)';
+      regForm.reset();
+    });
+
+    // Footer subscribe (demo)
+    const subForm = document.getElementById('subForm');
+    const subStatus = document.getElementById('subStatus');
+    subForm?.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const email = document.getElementById('subEmail').value.trim();
+      if(!email || !/^\S+@\S+\.\S+$/.test(email)){ subStatus.textContent = 'Enter a valid email.'; subStatus.style.color = 'var(--warn)'; return; }
+      subStatus.textContent = 'Subscribed! 🎉';
+      subStatus.style.color = 'var(--accent)';
+      subForm.reset();
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
